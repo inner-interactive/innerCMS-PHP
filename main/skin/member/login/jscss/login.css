@@ -1,0 +1,42 @@
+
+#Loginwrap										{ position:relative; float:left; margin: 30px 0 100px; width:100%; letter-spacing:-1px;}
+#Loginwrap	h4{ position:relative; width:100%; margin:0 auto; text-align:center; font-size: 22px;font-weight:normal; color:#1F4787; padding-bottom:20px; line-height:30px;}
+#Loginwrap	h4	 strong					{ font-weight:normal;}
+#Loginwrap	ul									{ position:relative; width:60%; margin:0 auto; text-align:center; padding:25px 0;}
+#Loginwrap	ul	li								{ display:inline;padding:0 35px; background:url(../img/line.gif) right 4px no-repeat; }
+#Loginwrap	.line								{ background:none;}
+#Loginwrap	.txt								{ position:relative; width:71%; margin:0 auto; text-align: center; border-top:1px solid #dfdfdf; padding-top:20px; font-size:13px; line-height:24px;}
+#Loginwrap	.txt	span						{ color:#0E77E6;}
+#Loginwrap	.bdnone						{ border:0;}
+
+#loginbg											{ position:relative; width:60%; margin:0 auto; border:1px solid #dfdfdf; background-color:#FBFCFD; padding:30px 40px;}
+#loginbg	p										{ font-size:14px; padding-bottom:10px;}
+#loginbg	p	span								{ color:#0E77E6;}
+#loginbg .loginform							{ margin:30px auto; }
+#loginbg .loginform input{ padding-left: 9px; width: 98%; vertical-align: middle; border: 1px solid #dfdfdf; height:30px; font-size:15px; margin-bottom:10px; }
+#loginbg .loginbt		{ display: block; margin: 10px auto; padding: 8px 0; width: 100%; height: auto; font-size: 18px; text-align: center; color:#fff; border-radius: 3px; border: 1px solid #1F4787; background-color: #43486f; cursor: pointer; font-family: "�������",Malgun Gothic,"�������",Nanum Gothic,"����",dotum,AppleGothic,sans-serif; -webkit-appearance: none; }
+#loginbg .loginbt:hover{ background-color: #1F4787; }
+
+#loginbg	.pwchange						{ position:relative; float:left; width:100%; margin:15px 0;}
+#loginbg .pwchange	label				{ float:left; width:100px; line-height:40px; color:#333;}
+#loginbg .pwchange	input 			{ float:right; width:75%; vertical-align:middle; border:1px solid #dfdfdf; height:30px; font-size:15px; margin-bottom:10px; }
+
+
+
+
+.login_id, .login_pass	{ position:absolute; display:none; font-size:0; overflow:hidden; visibility:hidden;}
+
+
+.alert	{z-index:999}
+
+
+@media screen and (max-width:600px) {
+
+	#Loginwrap	h4{ font-size: 16px; line-height: 18px; }
+	#loginbg .loginform input{ padding-left: 0; }
+	#Loginwrap	ul{ padding: 10px 0; width: 90%; }
+	#Loginwrap	ul	li{ padding: 0 15px; font-size: 12px; }
+	#Loginwrap	.txt{ padding-top: 15px; font-size: 11px; line-height: 15px; text-align: center; }
+
+
+}

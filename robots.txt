@@ -1,0 +1,7 @@
+User-agent: *
+Disallow: /common/
+Disallow: /data/
+Disallow: /innerCMS/
+Disallow: /session/
+Disallow: /smarteditor2/
+Allow: /main/

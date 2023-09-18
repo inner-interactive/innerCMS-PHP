@@ -1,0 +1,88 @@
+@charset "utf-8"; 
+
+body {
+      margin : 0;
+      padding : 0;
+      font-size : 9pt;
+      font-family : 돋움, 돋움체, 굴림, 굴림체, 한강체, 서울체, Seoul, tahoma;
+      width:100%;
+      background-color:#0C0F1B;
+      z-index:0;
+}
+
+
+
+td    { color : #666666; font-family : 돋움, 돋움체, 굴림, 굴림체, 한강체, 서울체, Seoul, tahoma; line-height :  150%;  font-size : 9pt;}
+img   { margin : 0; border : 0; padding:0}
+div   { margin : 0; padding : 0; border : 0;  font-family : 돋움, 돋움체, 굴림, 굴림체, 한강체, 서울체, Seoul, tahoma; color:#666666; font-size : 9pt;}
+span  { margin : 0; padding : 0; border : 0; font-family : 돋움, 돋움체, 굴림, 굴림체, 한강체, 서울체, Seoul, tahoma; color:#666666; font-size : 9pt;}
+form  { margin : 0; padding : 0; border : 0;  font-size : 9pt;}
+ul    { list-style : none; margin : 0; padding : 0;  font-size : 9pt;}
+ol    { list-style : none; margin : 0; padding : 0;  font-size : 9pt;}
+li    { list-style : none; margin : 0; padding : 0; font-size : 9pt;}
+dl    { list-style : none; margin : 0; padding : 0; font-size : 9pt;}
+dt    { list-style : none; margin : 0; padding : 0;  font-size : 9pt;}
+dd    { list-style : none; margin : 0; padding : 0;  font-size : 9pt;}
+p    { list-style : none; margin : 0; padding : 0;  font-size : 9pt;}
+select    { list-style : none; margin : 0; padding : 0;  font-size : 9pt;}
+label    { list-style : none; margin : 0; padding : 0; }
+input    { list-style : none; margin : 0; padding : 0;  }
+em   { list-style : none; margin : 0; padding : 0;  font-size : 9pt; font-style: normal;}
+
+
+
+a:link      { text-decoration: none; color: #666666; }
+a:visited   { text-decoration: none; color: #666666; }
+a:active    { text-decoration: none; color: #666666; }
+a:hover     { text-decoration: none; color: #000000; }
+
+fieldset								 { border: solid 0 transparent; padding:0;margin:0;}
+legend									 { overflow:hidden;visibility:hidden;font-size:0;width:0;height:0;margin:0;padding:0;position:absolute; }
+hr                                       { overflow:hidden;visibility:hidden;font-size:0;width:0;height:0;margin:0;padding:0;position:absolute;}
+h1                                       { overflow:hidden;visibility:hidden;font-size:0;width:0;height:0;margin:0;padding:0;position:absolute;}
+h2                                       { overflow:hidden;visibility:hidden;font-size:0;width:0;height:0;margin:0;padding:0;position:absolute;}
+h3                                       { overflow:hidden;visibility:hidden;font-size:0;width:0;height:0;margin:0;padding:0;position:absolute;}
+h4                                       { overflow:hidden;visibility:hidden;font-size:0;width:0;height:0;margin:0;padding:0;position:absolute;}
+div.skipNav                              { overflow:hidden;visibility:hidden;font-size:0;width:0;height:0;margin:0;padding:0;position:absolute;}
+#skipNav                                 { overflow:hidden;visibility:hidden;font-size:0;width:0;height:0;margin:0;padding:0;position:absolute;}
+caption                                  { overflow:hidden;visibility:hidden;font-size:0;width:0;height:0;margin:0;padding:0;position:absolute;}
+.skipNav                                 { overflow:hidden;visibility:hidden;font-size:0;width:0;height:0;margin:0;padding:0;position:absolute;}
+
+
+.png24 { 
+
+    tmp:expression(setPng24(this)); 
+
+}
+
+
+#loginwrapper						{ position: relative; float:left; background:url(../img/index_bg.jpg) center top no-repeat;   width:100%; min-height:862px; height:862px; text-align:center; }
+#loginwrapper .subwrapper			{ margin:0 auto; width:582px; height:317px;}
+#loginwrapper .subwrapper .logo		{  margin:0 auto; margin:120px 0 30px 0;}
+
+
+#loginwrapper .subwrapper .login 											{ background:url(../img/index_bg.gif) center top no-repeat; width:582px; height:290px;}
+#loginwrapper .subwrapper .login dl											{ float:left; width:582px; margin:50px 0 0 0;}
+#loginwrapper .subwrapper .login dl dt										{ width:582px; }
+#loginwrapper .subwrapper .login dl dd										{ width:582px; margin:10px 0 0 0;}
+#loginwrapper .subwrapper .login dl dd .loginform							{ float:left;width:220px ;padding:15px 0 0 10px; margin:0 0 0 110px;}
+#loginwrapper .subwrapper .login dl dd .loginform span						{ float:left; padding:2px 0 5px 0}
+#loginwrapper .subwrapper .login dl dd .loginform span img					{ vertical-align:middle ;padding:0 5px 0 0}
+#loginwrapper .subwrapper .login dl dd .loginform span input				{ vertical-align:middle ;padding:0 5px 0 0}
+#loginwrapper .subwrapper .login dl dd .loginbt								{ float:left;padding:15px 0 0 0}
+#loginwrapper .subwrapper .login dl dd .loginform .inpstyle					{ border:1px solid #BEBEBE; width:150px; height:22px}
+
+#loginwrapper .subwrapper .bottommenu										{  margin:0 auto;  width:582px;}
+#loginwrapper .subwrapper .bottommenu li									{ display:inline;}
+
+#already_logined								{ position: relative; float:left; background:url(../img/index_bg.jpg) center top no-repeat; width:100%; min-height:862px; height:100%; text-align:center;}
+#already_logined .loginedwrapper				{ margin:0 auto; width:582px; padding:350px 0 0 0;}
+#already_logined .loginedwrapper p				{ margin:100px 0 0 0;  border:4px solid #EDEDED;}
+
+#loginwrapper .subwrapper .copyright address													{ padding:3px 0 3px 20px; text-decoration: none; color:#a5a5a5; font-style:normal; font-size:11px;}		
+#loginwrapper .subwrapper .copyright span														{ padding:0 0 0 20px; text-decoration: none; color:#a5a5a5; font-style:normal; font-size:11px;}		
+#loginwrapper .subwrapper .copyright span strong												{ color:#a5344d;}
+
+/* 초기 로그인 화면 */
+#loginwrapper .subwrapper			{ margin: 0 auto; width: 582px; height: 317px; }
+#loginwrapper .subwrapper .logo		{ margin: 0 auto; margin: 120px 0 30px 0; padding-top: 60px; color: #7a7683; font-size: 25px; font-weight: 500; letter-spacing: -2px; font-family: 'Noto Sans KR', sans-serif; text-shadow: 1px 1px 8px #000; }

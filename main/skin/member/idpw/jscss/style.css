@@ -1,0 +1,45 @@
+@charset "utf-8"; 
+
+.idpwsearchbox{ margin: 40px auto 0 auto; padding: 0 0 25px 0; width: 500px; height: 700px; font-size: 14px;  }
+#idpwsearch{ float: left; padding-bottom: 30px; width: 100%; border-bottom: 1px solid #8f8f8f; }
+#idpwsearch li{ float: left; width: 100%; }
+#idpwsearch li:first-child{ margin-bottom: 30px; }
+
+#idpwsearch p { display: block; float: left; margin-bottom:30px; padding: 10px 0; width: 100%; line-height: 20px; font-size: 25px; text-align: center; letter-spacing: -1px; border-top: 3px solid #555; background-color: #f8f8f8; border-bottom: 1px solid #ccc; }
+#idpwsearch p span{ font-size: 12px; color: #999; }
+#idpwsearch li span span{ display: block; margin-bottom: 10px; }
+#idpwsearch label{ display: inline-block; width: 90px; text-align: right; margin-right:10px; line-height: 37px; }
+#idpwsearch input{display: inline-block; width: 330px; height: 35px; vertical-align: middle; font-size: 16px; border: 1px solid #ccc; }
+
+#idpwsearch .idpw_sbtn{ display: block; margin: 10px 0 0 100px; padding: 8px 0; width: 330px; height: auto; font-size: 18px; text-align: center; color:#fff; border-radius: 3px; border: 1px solid #1F4787; background-color: #1F4787; cursor: pointer; font-family: "맑은고딕",Malgun Gothic,"나눔고딕",Nanum Gothic,"돋움",dotum,AppleGothic,sans-serif; -webkit-appearance: none; }
+#idpwsearch .idpw_sbtn:hover{ background-color: #2c77ba; }
+.loginbt{ float: left; width: 100%; text-align: center; }
+
+
+
+@media screen and (max-width:800px) {
+	#idpwsearch{  width: 100%; padding:0;margin:25px auto 0 auto; }
+	#idpwsearch label{width:60px; font-size:12px;}
+	#idpwsearch	p {  font-size:25px; line-height:25px;}
+	#idpwsearch	p span{ font-size:11px;}
+	#idpwsearch .idpw_sbtn{ margin: 10px auto; width: 40%; }
+	#idpwsearch input{ width: 60%; }
+	.loginform span{ float: left; width: 100%; }
+	.loginbt{ float: left; width: 100%; }
+
+}
+
+
+@media screen and (max-width:480px) {
+#idpwsearch	li:first-child{ margin-bottom:10px;}
+#idpwsearch	p {  font-size:20px; }
+#idpwsearch	p span{ display:none;}
+#idpwsearch label{width:60px;}
+}
+
+@media screen and (max-width:320px) {
+
+	
+
+}
+

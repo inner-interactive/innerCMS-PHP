@@ -1,0 +1,4 @@
+@charset "utf-8";
+.table_basic label, .table_basic input { vertical-align:middle;}
+.table_basic tbody td img { max-width:100%;}
+.reservation_times label { width:8%; display:inline-block;}

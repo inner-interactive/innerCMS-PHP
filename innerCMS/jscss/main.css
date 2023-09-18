@@ -1,0 +1,21 @@
+@CHARSET "UTF-8";
+
+#Leftbox .name			{ float: left; width: 170px; height: 90px; color: #111111; font-size: 12px; border-bottom: 5px solid #888888; background: #e0e0e0 url(../img/inc/default_people.png) 10px 23px no-repeat; }
+#Leftbox .name strong	{ display: block; margin: 30px 0 0 65px; font-weight: 300; }
+#Leftbox .name strong b	{ padding-right: 3px; color: #000000; font-size: 15px; font-weight: 500; }
+#Leftbox .name span		{ display: block; margin: 5px 0 0 65px; }
+#Leftbox .name .logout	{ position: absolute; left: 145px; top: 32px; }
+
+#Leftbox .information				{ float: left; position: relative; width: 169px; border-right: 1px solid #ddd; border-bottom: 1px solid #ddd; background: #f6f6f6; font-family: 돋움, 돋움체, 굴림, 굴림체, sans-serif; }
+#Leftbox .information ul			{ float: left; margin: 10px; }
+#Leftbox .information ul li			{ float: left; font-weight: bold; color: #9acd00; line-height: 20px; width: 200px; }
+#Leftbox .information ul li span	{ float: left; position: relative; padding: 0 0 0 18px; width: 55px; font-size: 11px; text-align:left; color: #656565; font-weight: normal; background: url(../img/inc/personalinfo_bullet.png) left 3px no-repeat; }
+#Leftbox .information ul li strong	{ float: left; position: relative; width: 90px; text-align: left; }
+
+.titleroad .Position				{ border-right: 0; }
+.Position .countnumber				{ float: left; }
+.Position .countnumber dl			{ float: left; font-weight: bold; letter-spacing: -1px; }
+.Position .countnumber dl dt		{ float: left; margin-left: 10px; }
+.Position .countnumber dl dd		{ float: left; margin: 0 12px 0 5px; }
+.Position .countnumber dl dd span	{ padding: 3px 5px 1px 3px; color: #e5004f; border: 1px solid #bfbfbf; border-radius: 2px; }
+

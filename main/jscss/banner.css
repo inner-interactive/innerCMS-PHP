@@ -1,0 +1,522 @@
+@charset "utf-8";
+
+/* 상단 배너 */
+.topbannerw {
+	width: 1400px;
+	margin: 0 auto;
+	overflow: hidden;
+}
+
+.topbanner {
+	background: #d1e6fc;
+	overflow: hidden;
+}
+
+.topban {
+	float: left;
+}
+
+.closebox {
+	float: right;
+	padding-top: 40px;
+	color: #6b6b6b;
+	font-size: 14px;
+	padding-right: 20px;
+	position: absolute;
+	right: 0;
+	top: 0;
+	z-index: 1;
+}
+
+.closecheck input[type=checkbox] {
+	border: 1px solid #d9d9d9;
+	width: 22px;
+	height: 22px;
+	box-sizing: border-box;
+	display: inline-block;
+	margin-right: 10px;
+}
+
+.closebtn {
+	padding-left: 10px;
+}
+
+.topbanner .swiper-container {
+	padding-bottom: 0 !important;
+}
+
+.topbanner .swiper-pagination-bullet {
+	background: #78a3dd !important;
+}
+
+.topbanner .swiper-pagination-bullet-active {
+	background: #78a3dd !important;
+}
+
+.topbanner .swiper-pagination {
+	right: 0 !important;
+	left: inherit !important;
+	width: 175px !important;
+	top: 70px;
+}
+
+@media only all and (max-width:1400px) {
+	.topbannerw {
+		width: 100%;
+	}
+}
+
+@media only all and (max-width:1024px) {
+	.topbannerw {
+		display: none;
+	}
+}
+
+/* 메인 텍스트 배너 */
+.maintext {
+	padding: 150px 0 0 0;
+	width: 700px;
+	color: #fff;
+	font-size: 32px;
+	line-height: 36px;
+	text-align: center;
+	float: left;
+}
+
+.maintext strong {
+	font-size: 52px;
+	display: block;
+	padding: 0 0 25px 0;
+}
+
+@media only all and (max-width:1024px) {
+	.maintext {
+		width: 100%;
+		padding-top: 150px;
+	}
+}
+
+/* 배경 이미지 배너 */
+.Mainbg {
+	width: 100%;
+	padding-top: 0;
+	display: block;
+	position: absolute;
+	overflow: hidden;
+	z-index: 0;
+}
+
+.Mainbg .slick-initialized {
+	left: 0;
+	top: 0;
+	width: 100%;
+	height: 100%;
+	margin-left: 0;
+	display: block;
+	position: relative;
+	max-width: none;
+	opacity: 1;
+}
+
+.Mainbg .slick-list {
+	width: 100%;
+	height: 100%;
+}
+
+.Mainbg .slick-track {
+	width: 100%;
+	height: 100%;
+}
+
+.Mainbg .slick-slide {
+	width: 100%;
+	height: 100%;
+}
+
+.Mainbg .page {
+	width: 100%;
+	height: 100%;
+	display: block;
+	position: relative;
+	box-sizing: border-box;
+	overflow: hidden;
+}
+
+.Mainbg .page .bg {
+	background-position: 50% 50%;
+	transition: transform 7s ease-out, opacity 1s 0.3s;
+	left: 0;
+	top: 0;
+	width: 100%;
+	right: 0;
+	bottom: 0;
+	position: absolute;
+	z-index: -1;
+	opacity: 0;
+	transform: scale(1.2);
+	background-repeat: no-repeat;
+	background-size: cover;
+	-webkit-transform: scale(1.2, 1.2);
+	-webkit-transition: transform 7s ease-out, opacity 1s ease 0.3s;
+}
+
+.Mainbg.ani .page.slick-active .bg {
+	opacity: 1;
+	transform: scale(1) rotate(0.001deg);
+	transition-delay: 0s;
+	-webkit-transform: scale(1, 1) rotate(.001deg);
+	-webkit-transition-delay: 0s;
+}
+
+.Mainbg .slick-list {
+	overflow: hidden;
+}
+
+.Mainbg .slick-slide {
+	height: 100%;
+	float: left;
+	min-height: 1px;
+}
+
+.Mainbg .slick-arrow {
+	background: none;
+	border: currentColor;
+	border-image: none;
+	top: 50%;
+	width: 50px;
+	height: 100px;
+	text-indent: -999em;
+	margin-top: -50px;
+	display: block;
+	position: absolute;
+	z-index: 7;
+}
+
+.Mainbg .slick-arrow::before {
+	background: url("../images/icons/icons.png") no-repeat -500px -160px;
+	transition: opacity 0.3s cubic-bezier(0, 0, 0.25, 1), visibility
+		cubic-bezier(0, 0, 0.25, 1);
+	left: 50%;
+	top: 50%;
+	width: 38px;
+	height: 82px;
+	margin-top: -41px;
+	margin-left: -19px;
+	display: block;
+	position: absolute;
+	content: "";
+	opacity: 0.3;
+	-webkit-transition: opacity 0.3s cubic-bezier(0, 0, 0.25, 1), visibility
+		0s cubic-bezier(0, 0, 0.25, 1);
+}
+
+.Mainbg .slick-arrow:hover::before {
+	opacity: 1;
+}
+
+.Mainbg .slick-arrow.slick-prev {
+	left: 58px;
+}
+
+.Mainbg .slick-arrow.slick-next {
+	right: 58px;
+}
+
+.Mainbg .slick-arrow.slick-next::before {
+	background-position: -550px -160px;
+}
+
+.Mainbg .slick-dots {
+	left: 0;
+	top: 60%;
+	width: 100%;
+	text-align: center;
+	margin-top: -80px;
+	position: absolute;
+	z-index: 2;
+}
+
+.Mainbg .slick-dots li {
+	display: inline-block;
+	max-width: 240px;
+}
+
+.Mainbg .slick-dots li button {
+	background: none;
+	border: currentColor;
+	border-image: none;
+	width: 12px;
+	height: 12px;
+	color: rgb(255, 255, 255);
+	overflow: hidden;
+	display: block;
+	position: relative;
+	background: rgba(255, 255, 255, 1);
+	border-radius: 100%;
+	margin-right: 7px;
+}
+
+.Mainbg .slick-dots li.slick-active button {
+	background: rgba(255, 255, 0, 1);
+}
+
+.Mainbg .slick-dots li button em {
+	transition: opacity 0.5s;
+	left: 0;
+	width: 100%;
+	height: 60px;
+	text-align: center;
+	bottom: 0;
+	color: rgb(255, 255, 255);
+	line-height: 60px;
+	display: block;
+	position: absolute;
+	z-index: 3;
+	-webkit-transition: opacity 0.5s;
+}
+
+.Mainbg .slick-dots li button::before {
+	background: url("../images/main/web_nav_off.jpg") no-repeat 0 0;
+	left: 50%;
+	width: 240px;
+	height: 60px;
+	bottom: 0;
+	margin-left: -120px;
+	display: block;
+	position: absolute;
+	content: "";
+}
+
+.Mainbg .slick-dots li#slick-slide00 button::before {
+	background-position: 0 0;
+}
+
+.Mainbg .slick-dots li#slick-slide01 button::before {
+	background-position: -240px 0;
+}
+
+.Mainbg .slick-dots li#slick-slide02 button::before {
+	background-position: -480px 0;
+}
+
+.Mainbg .slick-dots li#slick-slide03 button::before {
+	background-position: -720px 0;
+}
+
+.Mainbg .slick-dots li#slick-slide04 button::before {
+	background-position: -960px 0;
+}
+
+.Mainbg .slick-dots li button::after {
+	background: url("../images/main/web_nav_on.jpg") no-repeat 0 0;
+	transition: opacity 0.5s;
+	left: 50%;
+	top: 0;
+	width: 240px;
+	height: 80px;
+	margin-left: -120px;
+	display: block;
+	position: absolute;
+	content: "";
+	opacity: 0;
+	transform: translateY(20px);
+	-webkit-transform: translateY(20px);
+	-webkit-transition: opacity 0.5s;
+}
+
+.Mainbg .slick-dots li#slick-slide00 button::after {
+	background-position: 0 -20px;
+}
+
+.Mainbg .slick-dots li#slick-slide01 button::after {
+	background-position: -240px -20px;
+}
+
+.Mainbg .slick-dots li#slick-slide02 button::after {
+	background-position: -480px -20px;
+}
+
+.Mainbg .slick-dots li#slick-slide03 button::after {
+	background-position: -720px -20px;
+}
+
+.Mainbg .slick-dots li#slick-slide04 button::after {
+	background-position: -960px -20px;
+}
+
+.Mainbg .slick-dots li.slick-active button::after {
+	transition: 0.5s;
+	-webkit-transition: all 0.5s;
+}
+
+.Mainbg .slick-dots li button:hover::after {
+	opacity: 1;
+	transform: translateY(20px);
+	-webkit-transform: translateY(20px);
+}
+
+.Mainbg .slick-dots li.slick-active button::after {
+	opacity: 1;
+	transform: translateY(0px);
+	-webkit-transform: translateY(0);
+}
+
+.Mainbg .slick-dots li.slick-active button em {
+	transition: bottom 0.5s;
+	bottom: 10px;
+	-webkit-transition: bottom 0.5s;
+}
+
+.Mainbg .slick-dots li.slick-active#slick-slide00 button::after {
+	background-position: 0 0;
+}
+
+.Mainbg .slick-dots li.slick-active#slick-slide01 button::after {
+	background-position: -240px 0;
+}
+
+.Mainbg .slick-dots li.slick-active#slick-slide02 button::after {
+	background-position: -480px 0;
+}
+
+.Mainbg .slick-dots li.slick-active#slick-slide03 button::after {
+	background-position: -720px 0;
+}
+
+.Mainbg .slick-dots li.slick-active#slick-slide04 button::after {
+	background-position: -960px 0;
+}
+
+/* D-day 배너 */
+.d-day {
+	border: 1px solid #cdcdcd;
+	padding: 10px 20px;
+	overflow: hidden;
+	margin-bottom: 70px;
+	height: 80px;
+}
+
+.d-day .d-dayt {
+	font-size: 30px;
+	color: #e84d09;
+	font-weight: 700;
+	text-transform: uppercase;
+}
+
+.d-day .d-days {
+	color: #232323;
+	font-size: 24px;
+	font-weight: 700;
+	overflow: hidden;
+	height: 34px;
+}
+
+.d-day .d-dayw {
+	position: absolute;
+}
+
+.d-day .d-wrapper .d-list {
+	overflow: hidden;
+	width: 400px;
+}
+
+.d-day .d-daynum {
+	float: right;
+	overflow: hidden;
+}
+
+.d-day .d-daynum .dnum {
+	background: url(../img/main/d-daybg.png) no-repeat;
+	width: 30px;
+	height: 43px;
+	text-align: center;
+	line-height: 43px;
+	font-size: 26px;
+	font-weight: 700;
+	float: left;
+	margin-left: 2px;
+}
+
+.d-day .d-daynum .dcg {
+	color: #b3b3b3;
+}
+
+.d-day .d-daynum .dcr {
+	color: #ed350a;
+	font-size: 34px;
+}
+
+@media only all and (max-width:720px) {
+	.d-day .d-dayt {
+		font-size: 23px;
+		padding: 0;
+		text-align: center;
+	}
+	.d-day .d-days {
+		font-size: 20px;
+		text-align: center;
+	}
+	.d-day {
+		height: auto;
+		margin: 20px 0;
+	}
+	.d-day .d-daynum {
+		float: none;
+		text-align: center;
+	}
+	.d-day .d-dayw {
+		position: relative;
+	}
+	.d-day .d-daynum .dnum {
+		display: inline-block;
+		float: none;
+	}
+}
+
+/* 태그 배너 */
+.qaright {
+	position: fixed;
+	top: 540px;
+	width: 134px;
+	left: 50%;
+	margin-left: 730px;
+}
+
+.qaright dl {
+	display: block;
+	color: #363636;
+	background-color: #f8f9fd;
+	border: 1px solid #d6d7db;
+}
+
+.qaright dl dt {
+	display: block;
+	text-align: center;
+	line-height: 38px;
+	color: #494949;
+	font-size: 18px;
+	font-weight: 500;
+	letter-spacing: 0.5px;
+	border-bottom: 1px solid #d6d7db;
+	font-family: 'Futura-Medium';
+	font-weight: 700;
+}
+
+.qaright dl dd {
+	padding: 10px 5px;
+}
+
+.qaright dl dd a {
+	display: inline-block;
+	margin: 1px 0;
+	padding: 0 6px;
+	line-height: 20px;
+	font-size: 12px;
+	background: #fff;
+	border: 1px solid #d8d8d8;
+}
+
+.qaright dl dd a:hover {
+	color: #ea4a3d;
+	border: 1px solid #ea8d8c;
+}

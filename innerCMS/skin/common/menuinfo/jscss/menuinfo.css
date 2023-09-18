@@ -1,0 +1,29 @@
+@CHARSET "UTF-8";
+
+.menulist tbody tr:hover { background-color:#d5f9ff;}
+.table_basic tbody .depth1 {background-color:#c1c1c1}
+.table_basic tbody .depth2 {background-color:#f5f5f5}
+.table_basic tbody .depth3 {background-color:#e8e8e8}
+.table_basic tbody .depth4 {background-color:#dad8d8}
+.table_basic tbody .depth5 {background-color:#d2d1d1}
+
+.table_basic tbody .depth1 .menu_title {padding-left:30px; font-weight: bold; color: #505050; }
+.table_basic tbody .depth2 .menu_title {padding-left:60px}
+.table_basic tbody .depth3 .menu_title {padding-left:90px}
+.table_basic tbody .depth4 .menu_title {padding-left:120px}
+.table_basic tbody .depth5 .menu_title {padding-left:150px}
+
+.skinGroup { clear:both; margin:10px 0; position:relative; }
+.skinGroup ul li { float:left; margin-right:10px; padding:5px; cursor:pointer;}
+.skinGroup ul li input[type="radio"] { margin:0;}
+.skinGroup ul li .screenshot { z-index: 1; display:none; position:absolute; background: #eee; padding: 20px; top:50px; left:0;}
+.skinGroup ul li label{ cursor: pointer; }
+
+.treeMenu{ border: 1px solid #000; padding: 15px; clear:both; overflow:hidden;}
+.treeMenu .depth1 { float:left; width:200px;}
+.treeMenu li { margin:5px 0; width:100%; }
+.treeMenu ul ul {display:block; margin:0; padding:0; background:url(../img/line_tree_vr.gif) repeat-y 11px -1px;}
+.treeMenu li li	{position:relative; padding:0; background:url(../img/line_tree_hr.gif) no-repeat 1px 6px !important; white-space:nowrap; list-style:none;  margin-left:10px; padding-left:20px;}
+
+.text_select:hover{background:#eee;}
+.history_layer { overflow-y:auto; height:58px;}
