@@ -3,17 +3,18 @@ class DB extends mysqli {
 	
 	public $dbInfo;
 	
-	private $host = "";
-	private $id = "";
-	private $pw = "";
-	private $dbname = "";
 	
 	public function __construct($host = '', $id = '', $pw = '', $dbname = ''){
 		
-		if($host == '') $host = $this->host;
-		if($id == '') $id = $this->id;
-		if($pw == '') $pw = $this->pw;
-		if($dbname == '') $dbname = $this->dbname;
+	    /**
+	     * common/conf/dbconfig.php 파일에 DB접속 정보를 저장
+	     */
+	    include COMMON_PATH.'conf/dbconfig.php';
+		if($host == '') $host = $db_host;
+		if($id == '') $id = $db_id;
+		if($pw == '') $pw = $db_pw;
+		if($dbname == '') $dbname = $db_name;
+		
 		
 		if(!$host || !$id || !$pw || !$dbname) die('DB 접속 정보가 잘못되었습니다. common/conf/db.class.php 파일에서 DB 접속 정보를 입력해 주세요.');
 		parent::__construct($host, $id, $pw, $dbname);
